@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="https://codehs.com/uploads/6e3736253d140888fbdc33dc7d51e20c">
+    <!-- Title -->
+    <title>Lain-Clothing</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="clothing.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">ClothingExp-Lain</a>
+                <!-- Buttons -->
+                <div class="ms-auto d-flex">
+                    <a href="index.html" class="ms-0 button">
+                            <img src="https://codehs.com/uploads/cbe04696d144c72e9ba6b854cb415589" alt="gateway" width="30" height="30">
+                    </a>
+                    <a href="index.html" class="ms-0 button">
+                            <img src="https://codehs.com/uploads/9e1afdbac759bc66343d577f45fd4ca3" alt="gateway" width="30" height="30">
+                    </a>
+                    <a href="index.html" class="ms-1 button">
+                            <img src="https://codehs.com/uploads/32beab627aa790fa6240cc0e7a8d5e0c" alt="gateway" width="30" height="30">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary mt-5">
+                <li class="breadcrumb-item">
+                    <a class="link-body-emphasis fw-semibold text-decoration-none" href="main.html">Mainpage</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="link-body-emphasis fw-semibold text-decoration-none" href="gallery.html">Gallery</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Clothing
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid container-lg py-5">
+            <div class="row align-items-stretch">
+                <!-- Carousel Section -->
+                <div class="col-md-6">
+                    <div id="imageCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item active">
+                                <img src="https://codehs.com/uploads/48834b94bdb8aae6541e62f5d5da84a3" class="d-block w-100 h-100" alt="awesome-shirt-front">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://codehs.com/uploads/cfcbdd413877c45058bfbf4727f231dc" class="d-block w-100 h-100" alt="awesome-shirt-back">
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="description w-100">
+                        <!-- Title -->
+                        <h2 class="mb-3"><strong>LAYER 10 LOVE TEE</strong></h2>
+                        <!-- Description -->
+                        <p class="text-muted mb-4">A stylish and comfortable tee based on episode 10, fit with a ribbed collar and screen printed artwork. Perfect for casual wear or layering.</p>
+                        <!-- Price -->
+                        <h3 class="mb-4"><strong>$14.99 USD</strong></h3>
+                        <!-- Size -->
+                        <div class="mb-3">
+                            <button class="btn dropdown size" type="button" id="sizeDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select size" style="width: 150px; height: 40px;">
+                                XS
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="sizeDropdown">
+                                <li><a class="dropdown-item" href="shirtsm.html">SM</a></li>
+                                <li><a class="dropdown-item" href="shirtmd.html">MD</a></li>
+                                <li><a class="dropdown-item" href="shirtlg.html">LG</a></li>
+                                <li><a class="dropdown-item" href="shirtxl.html">XL</a></li>
+                            </ul>
+                        </div>
+                        <!-- Cart -->
+                        <button class="btn btn-sm mt-3 cart" type="submit" style="width: 150px; height: 40px;">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer class="py-3 footer">
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Gateway |</a></li>
+            <li class="nav-item"><a href="main.html" class="nav-link px-2 text-muted">Mainpage |</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link px-2 text-muted">Gallery |</a></li>
+            <li class="nav-item"><a href="shirtxs.html" class="nav-link px-2 text-muted">Clothing |</a></li>
+            <li class="nav-item"><a href="team.html" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">ClothingExp-Lain™</p>
+    </footer>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

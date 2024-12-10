@@ -1,0 +1,105 @@
+body {
+    border-left: 10px solid #c1c5c9;
+    border-right: 10px solid #c1c5c9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+* {
+    font-family: "Inconsolata", monospace;
+}
+
+.navbar {
+    background-color: #0000a9 !important;
+}
+
+.breadcrumb {
+    background-color: #c1c5c9 !important;
+}
+
+.footer {
+    background-color: #c1c5c9;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    flex: 1;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f8f8f8;
+    padding: 50px;
+    height: 100%;
+    text-align: left;
+    gap: -15px;
+}
+
+.size {
+    border-radius: 0%;
+    border: 1px solid black !important;
+}
+
+.dropdown {
+    text-align: left;
+    padding-right: 30px;
+    position: relative;
+}
+
+.dropdown::after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #000;
+}
+
+.cart {
+    border-radius: 0%;
+    border: none;
+    background-color: #0000a9 !important;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: lightblue; }
+    71% { color: lavender; }
+    85% { color: purple; }
+    100% { color: red; }
+}
+
+.cart:hover {
+    animation: rainbow 1.5s linear infinite;
+    color: transparent;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body, html {
+  opacity: 0; 
+  animation: fadeIn 2s ease-in-out forwards; 
+  animation-delay: 0s; 
+}
+
+.carousel-item, .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-in-out forwards; 
+}

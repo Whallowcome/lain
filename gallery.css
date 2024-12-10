@@ -1,0 +1,71 @@
+body {
+    border-left: 10px solid #c1c5c9;
+    border-right: 10px solid #c1c5c9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+* {
+    font-family: "Inconsolata", monospace;
+}
+
+.navbar {
+    background-color: #0000a9 !important;
+}
+
+.breadcrumb {
+    background-color: #c1c5c9 !important;
+}
+
+.footer {
+    background-color: #c1c5c9;
+    text-align: center;
+    position: relative;
+    /* top: 82px; */
+    margin: 0px;
+    flex: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body, html {
+  opacity: 0; 
+  animation: fadeIn 2s ease-in-out forwards; 
+  animation-delay: 0s; 
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.portal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    cursor: not-allowed;
+}
+
+.portal:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
